@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/red_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/bg_panel_red" />
+
+        <ImageView
+            android:id="@+id/kuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="18dp"
+            android:background="@mipmap/bg_frame" />
+
+        <ImageView
+            android:id="@+id/beibao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/title_bg"
+            android:paddingBottom="8dp"
+            android:src="@mipmap/title_backpack" />
+
+        <ImageView
+            android:id="@+id/beibao_close1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/btn_close" />
+
+        <ImageView
+            android:id="@+id/hecheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/red_bg"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:background="@mipmap/btn_up_blue"
+            android:src="@mipmap/title_craft" />
+
+        <ImageView
+            android:id="@+id/guaiwu_yingxiong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/hecheng"
+            android:background="@mipmap/btns_hero" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hecheng"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/guaiwu_yingxiong"
+            android:background="@mipmap/btn_up_blue"
+            android:src="@mipmap/title_atk" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chushou"
+            android:layout_below="@+id/guaiwu_yingxiong"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/chushou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/red_bg"
+            android:layout_alignStart="@+id/hecheng"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/btn_blue"
+            android:src="@mipmap/text_sell" />
+
+        <ImageButton
+
+            android:id="@+id/qianghua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chushou"
+            android:layout_toRightOf="@+id/chushou"
+            android:background="@mipmap/btn_blue"
+            android:src="@mipmap/text_upgrade" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chushou"
+            android:layout_toRightOf="@+id/qianghua"
+            android:background="@mipmap/btn_blue"
+            android:src="@mipmap/text_evolve" />
+    </RelativeLayout>
+</RelativeLayout>

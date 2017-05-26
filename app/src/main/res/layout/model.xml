@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/hero_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/kuan_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/rare1" />
+
+            <ImageView
+                android:id="@+id/hero_select"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_mermaidqueen" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hero_layout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/dengji_select"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/b_highlight" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/stat1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/star_small"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/stat2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/star_small"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/stat3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/star_small"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/stat4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/star_small"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textDengji_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="LV.15"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shuxing_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textDengji_select"
+            android:src="@mipmap/att_earth" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

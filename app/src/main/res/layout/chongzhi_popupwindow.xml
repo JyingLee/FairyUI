@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="440dp"
+        android:layout_marginTop="23dp"
+        android:background="@mipmap/bg_frame">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:background="@mipmap/bg_panel_wood" />
+
+        <LinearLayout
+            android:id="@+id/chongzhi_duihuan_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_sm_red"
+                android:paddingBottom="5dp"
+                android:src="@mipmap/text_sm_chongzhi" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_sm_blue"
+                android:paddingBottom="5dp"
+                android:src="@mipmap/text_duihuan" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/vip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chongzhi_duihuan_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/banner_red_long">
+
+            <ImageView
+                android:id="@+id/vip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/title_vip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/vip_text"
+                android:background="@mipmap/btn_purple2"
+                android:padding="8dp"
+                android:src="@mipmap/text_be_vip" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:text="12000"
+                android:textColor="#ffff33"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/money"
+                android:background="@mipmap/icon_ticket" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_item"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/vip_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/bg_panel_paper">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/item1" />
+
+            <TextView
+                android:id="@+id/youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/banner_green"
+                android:gravity="center"
+                android:text="优惠60%"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/yueka_libao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/youhui"
+                android:layout_toRightOf="@+id/youhui"
+                android:background="@mipmap/banner_gradient"
+                android:paddingRight="20dp"
+                android:src="@mipmap/text_subscribe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/yueka_libao"
+                android:layout_below="@+id/yueka_libao"
+                android:layout_marginTop="5dp"
+                android:text="包含三一张月卡，三颗钻石"
+                android:textColor="#A52A2A"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/btn_red"
+                android:gravity="center"
+                android:text="$68"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_item"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/first_item"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/bg_panel_paper">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/item2" />
+
+            <TextView
+                android:id="@+id/youhui_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/banner_green"
+                android:gravity="center"
+                android:text="优惠60%"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/yueka_libao_senond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/youhui_second"
+                android:layout_toRightOf="@+id/youhui_second"
+                android:background="@mipmap/banner_gradient"
+                android:paddingRight="20dp"
+                android:src="@mipmap/text_subscribe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/yueka_libao_senond"
+                android:layout_below="@+id/yueka_libao_senond"
+                android:layout_marginTop="5dp"
+                android:text="包含三一张月卡，三颗钻石"
+                android:textColor="#A52A2A"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/btn_red"
+                android:gravity="center"
+                android:text="$68"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_item"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/second_item"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/bg_panel_paper">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/item3" />
+
+            <TextView
+                android:id="@+id/youhui_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/banner_green"
+                android:gravity="center"
+                android:text="优惠60%"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/yueka_libao_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/youhui_third"
+                android:layout_toRightOf="@+id/youhui_third"
+                android:background="@mipmap/banner_gradient"
+                android:paddingRight="20dp"
+                android:src="@mipmap/text_subscribe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/yueka_libao_third"
+                android:layout_below="@+id/yueka_libao_third"
+                android:layout_marginTop="5dp"
+                android:text="包含三一张月卡，三颗钻石"
+                android:textColor="#A52A2A"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/btn_red"
+                android:gravity="center"
+                android:text="$68"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/title_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/text_title_chongzhi" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/btn_close" />
+</RelativeLayout>
